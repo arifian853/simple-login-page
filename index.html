@@ -3,32 +3,40 @@
 <head>
 <link rel="shortcut icon" type="image/x-icon" href="user.png" /> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <link rel="stylesheet" href="styles.css"> 
 <title> Login Page </title> 
 </head>    
 <body>    
-    <h1 class="title" align="center"> Login Form Example </h1>
-    <br />   
+    <h1 class="title" align="center"> Welcome ! </h1>   
     <form class="text-light">
-        <div class="container1">
+        <div data-aos="zoom-out" data-aos-duration="500" class="container1">
             <p align="center"><img class="user" src="user.png" alt=""></p>
-            <br />   
+            <br /> 
+            <p>Enter your credential below</p>
+            <hr />
             <label>Username : </label>   
             <input type="text" placeholder="Enter Username" name="username" required>
             <br />  
             <label>Password : </label>   
             <input type="password" placeholder="Enter Password" name="password" required>  
-            <a href="result.html"><button type="button" >  Login </button></a>   
+            <a href="result.html"><button type="button" >  Login </button></a>  
+            <br> 
             <input type="checkbox" checked="checked"> Remember me   
-            <button type="button" class="cancelbtn"> Cancel</button> 
-            <a href="forgot.html"><button class="cancelbtn" type="button" >  Forgot password ? </button></a>  
-               
-            <br />
-            <hr />
-            <p><i>Made by Arifian Saputra</i></p>
-            <p><i>Attribution : Icons made by <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> </i></p>
+            <br>
+            <a href="forgot.html"><button class="cancelbtn" type="button" >  Forgot password ? </button></a> 
+            <br>
+            <hr>
+            <p class="about text-muted">Made by Arifian Saputra , 2021.</p> 
         </div>   
     </form>     
 </body>     
 </html>  
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
