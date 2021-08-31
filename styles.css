@@ -1,13 +1,23 @@
-body {  
-    font-family: Calibri, Helvetica, sans-serif;  
-    background-color: #2A3950;
-    margin: 25px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}  
+:root {
+    --oxford-blue:#011936;
+    --alabaster:#E6EBE0;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {   
+    background-color: var(--oxford-blue);
+    font-family: 'Open Sans', sans-serif;
+}
+
 button {   
-    background-color: #FE9677;   
-    width: 100%;  
-    color: black;   
+    background-color: var(--oxford-blue);   
+    width: 50%;  
+    color: var(--alabaster);   
     padding: 15px;   
     margin: 10px 0px;   
     border: none;   
@@ -18,7 +28,8 @@ button {
 form {   
     border-radius: 12px;
     box-shadow: -1px -7px 28px -10px rgba(0,0,0,0.75);
-    background-color: #41436A;
+    margin: auto; 
+    max-width: 475px;
 }   
 
 input[type=text], input[type=password] {   
@@ -26,7 +37,7 @@ input[type=text], input[type=password] {
     margin: 8px 0;  
     padding: 12px 20px;   
     display: inline-block;   
-    border: 2px solid #F64668;   
+    border: 2px solid var(--oxford-blue);   
     box-sizing: border-box;
     border-radius: 12px;   
 }  
@@ -39,21 +50,58 @@ button:hover {
     margin: 10px 5px;  
 }   
 .container1 {   
-    padding: 30px;   
-    background-color: #41436A;
-    border-radius: 5px;  
+    padding: 20px;
+    background-color: var(--alabaster);
+    border-radius: 5px;
+    color: var(--oxford-blue);
+    max-width: 475px;
+    margin: auto;  
 }
 
 img.user {
-    height: 120px;
-    width: 120px;
+    height: 70px;
+    width: 70px;
 }
 
 .title {
-    color: whitesmoke;
+    color: var(--alabaster);
+    margin: 25px;
 }
 
 a {
     text-decoration:none ;
     color: black;
+}
+
+.closer {
+    background-color: var(--oxford-blue);   
+    max-width: 500px;  
+    color: var(--alabaster);   
+    padding: 15px;      
+    border: none;   
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: -1px -7px 28px -10px rgba(0,0,0,0.75);
+    align-items: center;
+    margin: auto;
+}
+
+.about {
+    font-size: x-small;
+}
+
+@media screen and (max-width: 768px) {
+    body, html {
+        scroll-behavior: smooth;
+        scroll-snap-type: none;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+
+    form {   
+        border-radius: 12px;
+        box-shadow: -1px -7px 28px -10px rgba(0,0,0,0.75);
+        margin: 15px; 
+    } 
 }
