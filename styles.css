@@ -165,7 +165,7 @@ a {
         background-color: var(--alabaster);
         border-radius: 7px;
         color: var(--oxford-blue);
-        max-width: 275px;
+        max-width: 345px;
         margin: auto;  
         box-shadow: -1px -7px 28px -10px rgba(0,0,0,0.75);
     }
