@@ -9,46 +9,15 @@ html {
     box-sizing: border-box;
 }
 
-body {   
-    background: linear-gradient(#011936,#E6EBE0);
+body { 
     font-family: 'Open Sans', sans-serif;
     padding: 0;
     margin: 0;
-    overflow-y: hidden;
 }
-
-body::before {
-    content: '';
-    position: fixed;
-    width: 100%;
+#particles-js {
     height: 100%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    background: url(star.png);
-    background-size: 45px;
-    opacity: 0.23;
-    animation: rain 8.1s linear infinite;
-}
-
-@keyframes rain 
-{
-    0%
-    {
-        background-position: 0 0;
-    }
-    25%
-    {
-        background-position: 5 25%;
-    }
-    50%
-    {
-        background-position: 10% 50%;
-    }
-    100%
-    {
-        background-position: 20% 100%;
-    }
+    background: linear-gradient(#011936,#E6EBE0);
+    margin: 0;
 }
 
 button {   
@@ -90,8 +59,13 @@ button:hover {
     border-radius: 7px;
     color: var(--oxford-blue);
     max-width: 375px;
-    margin: auto;  
+    margin-left: auto;  
+    margin-right: auto;
+    left: 0;
+    right: 0;
     box-shadow: -1px -7px 28px -10px rgba(0,0,0,0.75);
+    position: absolute;
+    margin-top: 100px;
 }
 
 .container2 {   
@@ -102,6 +76,7 @@ button:hover {
     max-width: 375px;
     margin: auto;  
     box-shadow: -1px -7px 28px -10px rgba(0,0,0,0.75);
+
 }
 
 img.user {
@@ -112,6 +87,11 @@ img.user {
 .title {
     color: var(--alabaster);
     margin: 25px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 a {
@@ -153,7 +133,7 @@ a {
         scroll-snap-type: none;
         margin: 0px;
         padding: 0px;
-        overflow-x: hidden;
+        overflow-x: none;
     }
 
     form {   
@@ -168,5 +148,25 @@ a {
         max-width: 345px;
         margin: auto;  
         box-shadow: -1px -7px 28px -10px rgba(0,0,0,0.75);
+    }
+    .container1 {   
+        padding: 20px;
+        background-color: var(--alabaster);
+        border-radius: 7px;
+        color: var(--oxford-blue);
+        max-width: 375px;
+        margin-left: auto;  
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        box-shadow: -1px -7px 28px -10px rgba(0,0,0,0.75);
+        position: absolute;
+        margin-top: 100px;
+    }
+    #particles-js {
+        height: 100%;
+        background: linear-gradient(#011936,#E6EBE0);
+        margin-bottom: 520px;
+
     }
 }
