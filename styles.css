@@ -16,7 +16,7 @@ body {
 }
 #particles-js {
     height: 100%;
-    background: linear-gradient(#011936,#E6EBE0);
+    background: linear-gradient(40deg,#011936,#E6EBE0);
     margin: 0;
 }
 
@@ -49,10 +49,6 @@ input[type=text], input[type=password] {
 button:hover {   
     opacity: 0.7;   
 }
-
-.forgot {
-    font-size: small;
-}
 .container1 {   
     padding: 20px;
     background-color: var(--alabaster);
@@ -65,7 +61,7 @@ button:hover {
     right: 0;
     box-shadow: -1px -7px 28px -10px rgba(0,0,0,0.75);
     position: absolute;
-    margin-top: 100px;
+    margin-top: 110px;
 }
 
 .container2 {   
@@ -74,9 +70,13 @@ button:hover {
     border-radius: 7px;
     color: var(--oxford-blue);
     max-width: 375px;
-    margin: auto;  
+    margin-left: auto;  
+    margin-right: auto;
+    left: 0;
+    right: 0;
     box-shadow: -1px -7px 28px -10px rgba(0,0,0,0.75);
-
+    position: absolute;
+    margin-top: 185px;
 }
 
 img.user {
@@ -145,9 +145,14 @@ a {
         background-color: var(--alabaster);
         border-radius: 7px;
         color: var(--oxford-blue);
-        max-width: 345px;
-        margin: auto;  
+        max-width: 375px;
+        margin-left: auto;  
+        margin-right: auto;
+        left: 0;
+        right: 0;
         box-shadow: -1px -7px 28px -10px rgba(0,0,0,0.75);
+        position: absolute;
+        margin-top: 150px;
     }
     .container1 {   
         padding: 20px;
